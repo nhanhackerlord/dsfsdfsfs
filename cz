@@ -18,7 +18,7 @@ gradient.Color = ColorSequence.new{
 gradient.Parent = button -- Đặt Gradient là con của nút
 
 -- Văn bản trên nút
-button.Text = "Stop (To stop tweening)"
+button.Text = "Stop tweening"
 button.Parent = screenGui -- Đặt nút là con của ScreenGui
 
 -- Gán sự kiện khi nút được nhấn
@@ -99,8 +99,7 @@ spawn(function()
         task.wait()
     until game.Players.LocalPlayer and game.Players.LocalPlayer.Team ~= nil 
     wait(1.5)
-    require(game.ReplicatedStorage.Notification).new("<Color=Red> WELECOM TO BEST Hub<Color=/>"):Display()
-    require(game.ReplicatedStorage.Notification).new("<Color=Blue>THÔNG BÁO:Hub Ít Tính Năng Do Tối Ưu<Color=/>"):Display()
+    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>This Hub Is Made By Mura Team 😁 <Color=/>"):Display()
 end)
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
@@ -2724,7 +2723,7 @@ end)
 
 
     local ToggleMobAura = Tabs.Main:AddToggle("ToggleMobAura", {
-        Title = "Đánh Quái Ở Gần",
+        Title = "Near Mob Farm",
         Description = "",
         Default = false })
     ToggleMobAura:OnChanged(function(Value)
@@ -3874,7 +3873,7 @@ if Third_Sea then
 
 
 
-    local ToggleShip = Tabs.Main:AddToggle("ToggleShip", {Title = "Đánh Thuyền Hải Tặc",Description = "", Default = false })
+    local ToggleShip = Tabs.Main:AddToggle("ToggleShip", {Title = "Auto Attack Pirate Ship",Description = "", Default = false })
     ToggleShip:OnChanged(function(Value)
         _G.Ship = Value
        end)
@@ -4036,7 +4035,7 @@ spawn(function()
 
     local AutoElite = Tabs.Main:AddSection("Auto Elite Boss")
 
-    local ToggleElite = Tabs.Main:AddToggle("ToggleElite", {Title = "Đánh Boss Bí Ẩn",Description = "", Default = false })
+    local ToggleElite = Tabs.Main:AddToggle("ToggleElite", {Title = "Elite Boss",Description = "", Default = false })
 
     ToggleElite:OnChanged(function(Value)
        _G.AutoElite = Value
@@ -5757,7 +5756,7 @@ spawn(function()
 end)
 
 
-local ToggleGetFruit = Tabs.Raid:AddToggle("ToggleGetFruit", {Title = "Auto Get Fruit Under 1m",Description = "", Default = true })
+local ToggleGetFruit = Tabs.Raid:AddToggle("ToggleGetFruit", {Title = "Auto Get Fruit Under 1m",Description = "", Default = false })
 ToggleGetFruit:OnChanged(function(Value)
     _G.Autofruit = Value
 end)
