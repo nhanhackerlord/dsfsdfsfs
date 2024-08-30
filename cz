@@ -99,7 +99,7 @@ spawn(function()
         task.wait()
     until game.Players.LocalPlayer and game.Players.LocalPlayer.Team ~= nil 
     wait(1.5)
-    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>This Hub Is Made By Mura Team 😁 <Color=/>"):Display()
+    require(game.ReplicatedStorage.Notification).new("<Color=Yellow>This Hub Is Made By Idk Team 😁 <Color=/>"):Display()
 end)
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
